@@ -29,28 +29,24 @@ HexPatches.MemoryPatch("libunity.so", 0x7a74c7c, "h20008052C0035FD6", 32);
 HexPatches.MemoryPatch("libunity.so", 0x543f820, "h00008052C0035FD6", 32); 
 HexPatches.MemoryPatch("libunity.so", 0x543f828, "hC0035FD6C0035FD6", 32);
 
-if os.date("%Y%m%d") > "20260210" then
-hh= gg.alert("⚠⚠Script expired⚠⚠")
-os.exit()
-end
 RED = 1
 function main()
-RED = gg.choice({
-"𝗕𝗬𝗣𝗔𝗦𝗦 𝗠𝗘𝗡𝗨",  
-"𝗔𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨",  
-"𝗛𝗔𝗖𝗞𝗦 𝗠𝗘𝗡𝗨",
-"𝗘𝗫𝗜𝗧 𝗠𝗘𝗡𝗨",
-"𝗡𝗢𝗧𝗘",
-},nil,os.date("🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼"))
+    RED = gg.choice({
+        "ᯓ➤ 𝗕𝗬𝗣𝗔𝗦𝗦 𝗠𝗘𝗡𝗨",  
+        "ᯓ➤ 𝗔𝗜𝗠𝗕𝗢𝗧 𝗠𝗘𝗡𝗨",  
+        "ᯓ➤ 𝗛𝗔𝗖𝗞𝗦 𝗠𝗘𝗡𝗨",
+        "ᯓ➤ 𝗘𝗫𝗜𝗧 𝗠𝗘𝗡𝗨",
+        "ᯓ➤ 𝗡𝗢𝗧𝗘",
+    }, nil, os.date("\t\t\t\t\t\t\t\t\t👑🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼👑\n\n🎮 Game Patch : 1.6.50\n\n🗓️ Tanggal: %A, %d-%m-%Y\n🕒 Waktu: %H:%M:%S"))
 
-if RED == nil then else
-if RED == 1 then bypass()end
-if RED == 2 then bono()end
-if RED == 3 then cheat()end
-if RED == 4 then os.exit()end
-if RED == 5 then Details()end
-end
-RED = -1
+    if RED == nil then else
+        if RED == 1 then bypass() end
+        if RED == 2 then bono() end
+        if RED == 3 then cheat() end
+        if RED == 4 then os.exit() end
+        if RED == 5 then Details() end
+    end
+    RED = -1
 end
 
 function Details()
@@ -59,10 +55,10 @@ end
 
 function bypass()
 local menu = gg.choice({
-"𝗕𝗬𝗣𝗔𝗦𝗦 𝗟𝗢𝗚𝗢 𝗞𝗜𝗟𝗟 ",   
-"𝗖𝗟𝗘𝗔𝗥 𝗟𝗢𝗚𝗦",  
+"ᯓ➤ 𝗕𝗬𝗣𝗔𝗦𝗦 𝗟𝗢𝗚𝗢 𝗞𝗜𝗟𝗟 ",   
+"ᯓ➤ 𝗖𝗟𝗘𝗔𝗥 𝗟𝗢𝗚𝗦",  
 "𝗕𝗔𝗖𝗞"
-}, nil, "WE🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼")
+}, nil, "👑🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼👑")
 if menu == 1 then logo() end
 if menu == 2 then logs() end
 if menu == 3 then main() end
@@ -85,6 +81,7 @@ HexPatches.MemoryPatch("libanogs.so", 0x3DA1C8, "h 00 00 80 D2 C0 03 5F D6", 32)
 HexPatches.MemoryPatch("libanogs.so", 0x3DA47C, "h 00 00 80 D2 C0 03 5F D6", 32);
 HexPatches.MemoryPatch("libanogs.so", 0x3DA548, "h 00 00 80 D2 C0 03 5F D6", 32);
 HexPatches.MemoryPatch("libanogs.so", 0x3F9964, "h 00 00 80 D2 C0 03 5F D6", 32);
+gg.toast("BYPASS ACTIVATED")
 end
 
 function logs()
@@ -125,17 +122,27 @@ os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss.ano2.dat")
 os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tssmua.zip")
 os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tssmua.zip/data")
 os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tssmua.zip/data2")
+gg.toast("Clear Log Success")
 end
 
 function bono()
-local menu = gg.choice({
-"𝗔𝗜𝗠𝗕𝗢𝗧 𝗔𝗟𝗟 𝗚𝗨𝗡𝗦",  
-"𝗔𝗜𝗠𝗕𝗢𝗧 𝗟𝗢𝗖𝗞",  
-"𝗕𝗔𝗖𝗞"
-}, nil, "🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼")
-if menu == 1 then D1() end
-if menu == 2 then D2() end
-if menu == 3 then main() end
+    local menu = gg.multiChoice({
+        "ᯓ➤ 𝗔𝗜𝗠𝗕𝗢𝗧 𝗔𝗟𝗟 𝗚𝗨𝗡𝗦",  
+        "ᯓ➤ 𝗔𝗜𝗠𝗕𝗢𝗧 𝗟𝗢𝗖𝗞",  
+        "𝗕𝗔𝗖𝗞"
+    }, nil, "👑🅆🄴🄻🄻🄲🄾🄼🄴 🅃🄾 🅁🄴🄳 🄲🄾🄳🄴 🄲🄾🄳🄼👑")
+
+    if menu then
+        if menu[1] then
+            D1()
+        end
+        if menu[2] then
+            D2()
+        end
+        if menu[3] then
+            main()
+        end
+    end
 end
 
 function D1()
@@ -149,6 +156,7 @@ AIMBOT =gg.prompt({"AIMBOT ADJUSTABLE "},nil,{"number"})
 if AIMBOT and AIMBOT [1] then
 setValues(il2cpp + AIMBOT1 + 0x8, 16, AIMBOT[1])
 setValues(il2cpp + AIMBOT2 + 0x8, 16, AIMBOT[1])
+gg.toast("AIM ALL GUNS ACTIVATED")
 end
 
 end
@@ -159,6 +167,7 @@ gg.refineNumber("0.5;0.69999998808", gg. TYPE_FLOAT)
 revert = gg.getResults(9999, nil, nil, nil, nil, nil, nil, nil, nil)
 gg.editAll("360", gg.TYPE_FLOAT)
 gg.clearResults()
+gg.toast("AIM LOCK ACTIVATED")
 end
 
 function cheat()
@@ -180,7 +189,7 @@ RED = gg.multiChoice({
 "𝗕𝗥 𝗧𝗔𝗚𝗦",  
 "𝗠𝗣 𝗧𝗔𝗚𝗦",  
 "𝗡𝗢 𝗣𝗔𝗥𝗔𝗖𝗛𝗨𝗧𝗘",  
-"𝗙𝗨𝗟𝗟 𝗦𝗖𝗥𝗘𝗘𝗡 𝗟𝗢𝗡𝗚 𝗘𝗫𝗘𝗖𝗨𝗧𝗘",  
+"𝗙𝗨𝗟𝗟 𝗦𝗖𝗥𝗘𝗘𝗡 𝗟𝗢𝗡𝗚 𝗘𝗫𝗘𝗖𝗨𝗧𝗘", 
 "𝗪𝗔𝗟𝗞 𝗨𝗡𝗗𝗘𝗥 𝗪𝗔𝗧𝗘𝗥",  
 "𝗡𝗢 𝗚𝗥𝗔𝗩𝗜𝗧𝗬 𝗣𝗨𝗠𝗣",  
 "𝗣𝗨𝗠𝗣 + 𝗝𝗨𝗠𝗣 𝗕𝗢𝗢𝗦𝗧",  
@@ -234,7 +243,8 @@ end
 
 
 function h1()
-HexPatches.MemoryPatch("libunity.so", 0x5B6DAA8, "h1F2003D5", 4);
+HexPatches.MemoryPatch("libunity.so", 0x6622bd0, "h1F 20 03 D5 E0 03 13 AA", 4);
+gg.toast("NORMAL WALLHACK ACTIVATED")
 end
 
 function h2()
@@ -243,6 +253,7 @@ setValues(il2cpp + WH , 32, "h4000001CC0035FD6")
 setValues(il2cpp + WH+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + WH+ 0x8, 16, 100)
 HexPatches.MemoryPatch("libunity.so", 0x83ffdd0, "h20008052C0035FD6", 32)
+gg.toast("RED WALLHACK ACTIVATED")
 end
 
 function h3()
@@ -254,6 +265,7 @@ setValues(il2cpp + RELOAD+ 0x8, 16, 0.0001)
 setValues(il2cpp + RELOAD1 , 32, "h4000001CC0035FD6")
 setValues(il2cpp + RELOAD1+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + RELOAD1+ 0x8, 16, 0.0001)
+gg.toast("NO RELOAD ACTIVATED")
 end
 
 function h4()
@@ -266,6 +278,7 @@ SPREAD1= 0x85ba160
 setValues(il2cpp + SPREAD1 , 32, "h4000001CC0035FD6")
 setValues(il2cpp + SPREAD1+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + SPREAD1+ 0x8, 16, 0.0001)
+gg.toast("NO SPREAD ACTIVATED")
 end
 
 function h5()
@@ -277,6 +290,7 @@ LESS2= 0x858cc5c
 setValues(il2cpp + LESS2 , 32, "h4000001CC0035FD6")
 setValues(il2cpp + LESS2+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + LESS2+ 0x8, 16, 0.0001)
+gg.toast("LESS SPREAD ACTIVATED")
 end
 
 function h6()
@@ -289,6 +303,7 @@ setValues(il2cpp + RECOIL2, 32, "h4000001CC0035FD6")
 setValues(il2cpp + RECOIL2 + 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + RECOIL2 + 0x8, 16, 0.0001)
 HexPatches.MemoryPatch("libunity.so",0x83b5234,"hC0035FD6C0035FD6",32)
+gg.toast("NO RECOIL ACTIVATED")
 end
 
 function h7()
@@ -296,12 +311,14 @@ SCOPE= 0x9862350
 setValues(il2cpp + SCOPE , 32, "h4000001CC0035FD6")
 setValues(il2cpp + SCOPE+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + SCOPE+ 0x8, 16, 0.0001)
+gg.toast("FAST SCOPE ACTIVATED")
 end
 
 function h8()
 HexPatches.MemoryPatch("libunity.so", 0x85831f4, "h20008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x85b4ccc, "h20008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x85b55ac, "h20008052C0035FD6", 32)
+gg.toast("HIT BOX ACTIVATED")
 end
 
 function h9()
@@ -311,6 +328,7 @@ setValues(il2cpp + RANGE1 + 0x4, 32, "hC0035FD600007A44")
 RANGE =gg.prompt({"RANGE ADJUSTABLE "},nil,{"number"})
 if RANGE and RANGE [1] then
 setValues(il2cpp + RANGE1 + 0x8, 16, RANGE[1])
+gg.toast("RANGE ACTIVATED")
 end
 end
 
@@ -323,10 +341,12 @@ setValues(il2cpp + FASTSHOOT1+ 0x8, 16, 0.001)
 setValues(il2cpp + FASTSHOOT2 , 32, "h4000001CC0035FD6")
 setValues(il2cpp + FASTSHOOT2+ 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + FASTSHOOT2+ 0x8, 16, 0.1)
+gg.toast("FAST SHOOT ACTIVATED")
 end
 
 function h11()
 HexPatches.MemoryPatch("libunity.so", 0x98634f4, "h00008052C0035FD6", 32)
+gg.toast("RAPID SR ACTIVATED")
 end
 
 function h12()
@@ -334,10 +354,12 @@ FLASH = 0x8407788
 setValues(il2cpp + FLASH, 32, "h4000001CC0035FD6")
 setValues(il2cpp + FLASH + 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + FLASH + 0x8, 16, 0.0001)
+gg.toast("NO FLASH BANG ACTIVATED")
 end
 
 function h13()
 HexPatches.MemoryPatch("libunity.so", 0x544e174, "h20008052C0035FD6", 32)
+gg.toast("ADVANCE UAV ACTIVATED")
 end
 
 function h14()
@@ -345,18 +367,22 @@ SWITCH = 0x9864bcc
 setValues(il2cpp + SWITCH, 32, "h4000001CC0035FD6")
 setValues(il2cpp + SWITCH + 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + SWITCH + 0x8, 16, 0.1)
+gg.toast("FAST SWITCH ACTIVATED")
 end
 
 function h15()
 HexPatches.MemoryPatch("libunity.so", 0x5770e24, "h20008052C0035FD6", 32)
+gg.toast("BR TAGS ACTIVATED")
 end
 
 function h16()
 HexPatches.MemoryPatch("libunity.so", 0x71e6f9c, "h20008052C0035FD6", 32)
+gg.toast("MP TAGS ACTIVATED")
 end
 
 function h17()
 HexPatches.MemoryPatch("libunity.so", 0x8fb9a90, "hC0035FD6C0035FD6", 32)
+gg.toast("NO PARACHUTE ACTIVATED")
 end
 
 function h18()
@@ -366,6 +392,7 @@ HexPatches.MemoryPatch("libunity.so", 0x7289b78, "h20008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x54199fc, "h00008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x541b420, "h20008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x54188e0, "h20008052C0035FD6", 32)
+gg.toast("LONG EXECUTE ACTIVATED")
 end
 
 function h19()
@@ -373,6 +400,7 @@ WATER = 0x664b520
 setValues(il2cpp + WATER, 32, "h4000001CC0035FD6")
 setValues(il2cpp + WATER + 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + WATER + 0x8, 16, 0.0001)
+gg.toast("UNDER WATER ACTIVATED")
 end
 
 function h20()
@@ -380,20 +408,24 @@ PUMP = 0x7d31b30
 setValues(il2cpp + PUMP, 32, "h4000001CC0035FD6")
 setValues(il2cpp + PUMP + 0x4, 32, "hC0035FD600007A44")
 setValues(il2cpp + PUMP + 0x8, 16, 0.0001)
+gg.toast("NO GRAVITY PUMP ACTIVATED")
 end
 
 function h21()
 HexPatches.MemoryPatch("libunity.so", 0x72be95c, "h20008052C0035FD6", 32)
+gg.toast("BOOST ACTIVATED")
 end
 
 function h22()
 HexPatches.MemoryPatch("libunity.so", 0x6500a08, "h0090201EC0035FD6", 32)
+gg.toast("SPEED ACTIVATED")
 end
 
 function h23()
 HexPatches.MemoryPatch("libunity.so", 0x576aaf8, "hC0035FD6C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x64c54e0, "h00008052C0035FD6", 32)
 HexPatches.MemoryPatch("libunity.so", 0x64c5550, "h00008052C0035FD6", 32)
+gg.toast("SPEC NO DELAY ACTIVATED")
 end
 
 function h24()
@@ -407,6 +439,7 @@ SNOW = gg.prompt({"Snow Board Boost Adjustable[1; 500]"}, nil, {"number"})
 if SNOW and SNOW [1] then
 setValues(il2cpp + SNOW1 + 0x8, 16, SNOW[1])
 setValues(il2cpp + SNOW2 + 0x8, 16, SNOW[1])
+gg.toast("FAST SNOW BOARD ACTIVATED")
 end
 end
 
@@ -417,6 +450,7 @@ setValues(il2cpp + SPEED + 0x4, 32, "hC0035FD600007A44")
 RUN = gg.prompt({"Speed Hack Adjustable[1; 100]"}, nil, {"number"})
 if RUN and RUN[1] then
 setValues(il2cpp + SPEED + 0x8, 16, RUN[1])
+gg.toast("SPEED HACK ACTIVATED")
 end
 end
 
@@ -444,6 +478,7 @@ setValues(il2cpp + JUMP2 + 0x8, 16, JUMP[1])
 setValues(il2cpp + JUMP3 + 0x8, 16, JUMP[1])
 setValues(il2cpp + JUMP4 + 0x8, 16, JUMP[1])
 setValues(il2cpp + JUMP5 + 0x8, 16, JUMP[1])
+gg.toast("HIGH JUMP ACTIVATED")
 end
 end
 
@@ -463,6 +498,7 @@ if SLIDE and SLIDE [1] then
 setValues(il2cpp + SLIDE1 + 0x8, 16, SLIDE[1])
 setValues(il2cpp + SLIDE2 + 0x8, 16, SLIDE[1])
 setValues(il2cpp + SLIDE3 + 0x8, 16, SLIDE[1])
+ gg.toast("UNLI SLIDE ACTIVATED")
 end
 end
 
@@ -473,6 +509,7 @@ setValues(il2cpp + SWIM1 + 0x4, 32, "hC0035FD600007A44")
 SWIM = gg.prompt({"Swim Boost Adjustable[1; 100]"}, nil, {"number"})
 if SWIM and SWIM [1] then
 setValues(il2cpp + SWIM1 + 0x8, 16, SWIM[1])
+gg.toast("BOOST SWIM ACTIVATED")
 end
 end
 
@@ -482,6 +519,7 @@ gg.setVisible(false)
 gg.searchNumber("h 00 00 80 40 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 00 00 40 40", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1)
 results = gg.getResults(99999)
 gg.editAll("h 00 00 48 42 00 00 80 3F 00 00 96 43 00 00 00 00 00 00 00 00 00 00 40 40", gg.TYPE_BYTE)
+gg.toast("ANTHENA ACTIVATED")
 end
 
 
